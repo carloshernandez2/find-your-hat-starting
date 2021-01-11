@@ -117,7 +117,14 @@ class Field {
 
 // testing
 const play = () =>{
-    const game = new Field(Field.create(10, 10, 20));
+    console.log("Reglas");
+    console.log("1. Ganas si encuentras tu sombrero.");
+    console.log("2. pierdes si caes en un hoyo.");
+    console.log("3. Pierdes si te mueves por fuera del campo.");
+    console.log("4. Muévete con i(izquierda), d(derecha), a(arriba), o ab(abajo)");
+    console.log("");
+
+    const game = new Field(Field.create(10, 10, 30));
     game.print();
     while (game.continuar){
         game.palabras = "Animo! Todo está en orden";
